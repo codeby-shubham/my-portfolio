@@ -2,23 +2,24 @@ import { ArrowUpRight,Phone } from "lucide-react";
 import profile from "./Shubham.jpeg";
 function Hero(){
     return(
-        <div className="flex flex-col md:flex-row items-center gap-12 bg-[#F7F5EF] text-[#18251F] w-full">
-        <div className="flex flex-col gap-4 px-4 py-4">
-            <h1 className="text-[#18251F]">HELLO I'M</h1>
-            <h2 className="text-3xl font-bold text-[#58645B] italic">Shubham Ojha</h2>
-            <p className="text-[#52745D]">B.Tech CSE · Galgotias University</p>
-            <div className="flex gap-3 w-full">
-                <button className="flex items-center gap-1 bg-blue-600 text-white px-1 py-2 rounded-lg">
-                    View Projects
-                    <ArrowUpRight/>
-                </button>
-                <a href="https://www.instagram.com/shubham._.0201" className="flex items-center gap-1 bg-blue-600 text-white px-1 py-2 rounded-lg">
-                    Contact Me
-                    <Phone/>
-                </a>
+        <div className="flex flex-col p-4 bg-[#0B1220] text-white gap-2">
+            <span className="text-[#1BFC06] bg-[#006400] p-2 rounded-2xl text-sm w-fit"> 
+                 ⦿ Available for learning & opportunities
+            </span>
+            <div>
+                <h1 className="text-4xl font-bold text-white md:text-5xl">Hello, I'm Shubham Ojha!</h1>
             </div>
+            <div>
+                <h2 className="text-xl font-semibold text-sky-400 md:text-3xl">B.Tech CSE Student</h2>
             </div>
-            <img src={profile} className="w-40 h-40 rounded-full object-cover"/>
+            <div>
+                <p className="text-base text-slate-400">Galgotias University · 2026-2030 </p>
+            </div>
+            <div>
+                <p className="max-w-sm md:max-w-md lg:max-w-lg text-base text-slate-400 leading-relaxed">
+                    I enjoy building web applications and exploring how technology works. Currently learning full-stack development and improving my problem-solving skills.
+                </p>
+            </div>
         </div>
     )
 }

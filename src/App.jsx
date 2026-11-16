@@ -14,33 +14,41 @@ function App() {
 
   return (
     <>
-    <div className='w-full min-h-screen'>
-      <section id="Navbar">
+    <div className='min-h-screen w-full bg-[#0B1220]'>
       <Navbar/>
-      </section>
-      <div className='mt-17'>
-      <section id="Hero">
-      <Hero/>
-      </section>
-      <section id="About">
-      <About/>
-      </section>
-      <section id="Education">
-      <Education/>
-      </section>
-      <section id="Skills">
-      <Skills/>
-      </section>
-      <section id="Projects">
-      <Projects/>
-      </section>
-      <section id="Contact">
-      <Contact/>
-      </section>
-      <section id="Footer">
-      <Footer/>
-      </section>
-      </div>
+      <main>
+        <section id='home' className='px-4'>
+          <div className='className=max-w-6xl mx-auto'>
+            <Hero/>
+          </div>
+        </section> 
+          <section id='About' className='px-4'>
+            <div className='className=max-w-6xl mx-auto'>
+              <About/>
+            </div>
+          </section>
+          <section id='Education' className='px-4'>
+            <div className='className=max-w-6xl mx-auto'>
+              <Education/>
+            </div>
+          </section>
+          <section id='Skill' className='px-4'>
+            <div className='className=max-w-6xl mx-auto'>
+              <Skills/>
+            </div>
+          </section>
+          <section id='Project' className='px-4'>
+            <div className='className=max-w-6xl mx-auto'>
+              <Projects/>
+            </div>
+          </section>
+          <section id='Contact' className='px-4'>
+            <div className='className=max-w-6xl mx-auto'>
+              <Contact/>
+            </div>
+          </section>
+          <Footer/>
+      </main>
       </div>
     </>
   );

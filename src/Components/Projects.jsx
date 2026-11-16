@@ -12,7 +12,7 @@ function Projects(){
             <h3>A few things I've built while learning and experiencing</h3>
             <div className=" gap-2 grid grid-col-1 md:grid-cols-2">
                 {MovieRender.map((movie) => (
-                    <MovieCard key={movie.id} icon={movie.icon} title={movie.title} description={movie.description} />
+                    <MovieCard key={movie.id} icon={movie.icon} title={movie.title} description={movie.description} link={movie.link} />
                 ))}
             </div>
         </div>
